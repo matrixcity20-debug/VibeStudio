@@ -8,6 +8,7 @@ import openrouterRouter from "./routes/openrouter.js";
 import systemPromptsRouter from "./routes/system-prompts.js";
 import skillsRouter from "./routes/skills.js";
 import modelsRouter from "./routes/models.js";
+import workspaceRouter from "./routes/workspace.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -21,6 +22,7 @@ app.use("/api", openrouterRouter);
 app.use("/api", systemPromptsRouter);
 app.use("/api", skillsRouter);
 app.use("/api", modelsRouter);
+app.use("/api", workspaceRouter);
 
 // Health check
 app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
