@@ -1,0 +1,22 @@
+{
+  "name": "vibe-studio",
+  "version": "1.0.0",
+  "description": "Vibe Studio — AI vibe coding assistant",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "db:push": "drizzle-kit push --config drizzle.config.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "drizzle-kit": "^0.31.1",
+    "drizzle-orm": "^0.44.1",
+    "express": "^5.2.1",
+    "openai": "^4.103.0",
+    "pg": "^8.16.0",
+    "zod": "^3.25.56"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
