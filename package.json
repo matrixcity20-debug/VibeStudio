@@ -2,6 +2,7 @@
   "name": "vibe-studio",
   "version": "1.0.0",
   "description": "Vibe Studio — AI vibe coding assistant",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
@@ -9,6 +10,7 @@
   },
   "dependencies": {
     "cors": "^2.8.6",
+    "dotenv": "^16.5.0",
     "drizzle-kit": "^0.31.1",
     "drizzle-orm": "^0.44.1",
     "express": "^5.2.1",
